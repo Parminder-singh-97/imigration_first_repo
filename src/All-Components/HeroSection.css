@@ -1,0 +1,12 @@
+@keyframes smooth-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+.animate-smooth-scroll {
+  animation: smooth-scroll 40s linear infinite;
+}
