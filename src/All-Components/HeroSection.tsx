@@ -473,7 +473,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
           {["Home", "About Us", "Services", "Contact"].map((name) => (
             <li key={name}>
               <NavLink
-                to={name === "Home" ? "/" : `/${name.toLowerCase().replace(" ", "")}`}
+                to={name === "Home" ? "/" : `/${name.toLowerCase().replace(" ", "-")}`}
                 className={({ isActive }) =>
                   `hover:text-blue-400 ${
                     isActive ? "text-blue-400 font-semibold" : ""
@@ -487,7 +487,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
         </ul>
 
         {/* Contact Button */}
-        <NavLink to="/contact" className="hidden md:block">
+        <NavLink to="/contact#contact" className="hidden md:block">
           <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-semibold transition">
             Contact Us
           </button>
@@ -551,7 +551,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
           {["Home", "About Us", "Services", "Contact"].map((name) => (
             <li key={name}>
               <NavLink
-                to={name === "Home" ? "/" : `/${name.toLowerCase().replace(" ", "")}`}
+                to={name === "Home" ? "/" : `/${name.toLowerCase().replace(" ", "-")}`}
                 className={({ isActive }) =>
                   `block py-2 hover:text-blue-500 ${
                     isActive ? "text-blue-600 font-semibold" : ""
@@ -566,7 +566,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
         </ul>
 
         <div className="px-6 mt-8">
-          <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/contact#contact" onClick={() => setMenuOpen(false)}>
             <button className="bg-blue-600 hover:bg-blue-700 text-white w-full py-2 rounded-lg font-semibold transition">
               Contact Us
             </button>
