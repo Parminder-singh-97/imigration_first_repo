@@ -103,34 +103,35 @@ const reviews = [
   {
     name: "Vanshika Garg",
     visa: "UK Tourist Visa",
-    text: "The team at this immigration consultant office in Chandigarh is amazing. Very good staff and excellent behavior. Everyone is so helpful and professional.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    text: "Trust Bridge Overseas Mohali di team bahut changi hai. Staff sab polite te professional ne. Bahut vadhiya experience si mera, sach much helpful log ne.",
+    image: "/public/girlClient1.jpeg", // Indian-looking female
   },
   {
     name: "Dharminder Singh",
     visa: "Singapore Visitor Visa",
-    text: "I had a great experience with this office. The team members are very polite and knowledgeable. They guided me throughout the process.",
-    image: "https://randomuser.me/api/portraits/men/33.jpg",
+    text: "Mujhe Trust Bridge Overseas ke staff ka behavior bahut pasand aaya. Sab ne bahut pyaar se guide kiya, process smooth tha. Highly recommend karunga!",
+    image: "/public/boyClient2.jpeg", // Indian-looking male
   },
   {
     name: "Priya Sharma",
     visa: "Canada Study Visa",
-    text: "They handled my study visa application very smoothly. Great service and timely communication!",
-    image: "https://randomuser.me/api/portraits/women/45.jpg",
+    text: "Mainu Canada study visa mil gaya Trust Bridge Overseas de through. Process clear te fast si. Bahut honest consultancy aa, thanks team!",
+    image: "https://i.pravatar.cc/300?img=49", // Indian-looking female
   },
   {
     name: "Aman Verma",
     visa: "Australia PR Visa",
-    text: "Professional and supportive team. They explained each step clearly and helped me get my PR without stress.",
-    image: "https://randomuser.me/api/portraits/men/21.jpg",
+    text: "Trust Bridge Overseas Mohali wale bahut professional ne. Har step detail ch samjha ke help kiti. PR process tension-free ho gaya, shukriya ji!",
+    image: "https://i.pravatar.cc/300?img=8", // Indian-looking male
   },
   {
     name: "Simran Kaur",
     visa: "New Zealand Study Visa",
-    text: "Highly professional and transparent service. The best consultancy for study visas!",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    text: "Mainu lagda Mohali ch Trust Bridge Overseas best consultancy hai. Staff dil se help karda, service transparent te fast aa. Bohat changa experience si!",
+    image: "/public/girlClient3.jpeg", // Indian-looking female
   },
 ];
+
 
 const ClientReviews: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);

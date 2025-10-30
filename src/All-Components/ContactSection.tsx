@@ -11,7 +11,7 @@ const Contact = () => {
 
     const formData = new FormData(e.currentTarget);
 
-    const response = await fetch("https://formspree.io/f/maypkwjq", {
+    const response = await fetch("https://formsubmit.co/ajax/trustbridgeoverseas@gmail.com", {
       method: "POST",
       body: formData,
       headers: { Accept: "application/json" },
@@ -37,29 +37,28 @@ const Contact = () => {
         Contact Us
       </h2>
             <h3 className="text-2xl md:text-3xl font-bold mb-6 leading-snug text-gray-900">
-              Contact Us for Inquiries and Bookings - <br /> Your Culinary Experience Starts Here!
+            Get Free & Quality Online Consultation <br /> Your Experience Starts Here!
             </h3>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">
-              Welcome! For all catering inquiries, please reach out at the numbers below or fill out the form.
-              Kindly provide your Name, Email, Mobile No, Subject, and event details. We look forward to serving you!
+             Our expert advisors offer comprehensive guidance tailored to your unique immigration needs, ensuring you receive valuable insights and practical solutions without any cost. Take advantage of this opportunity to start your journey with confidence, backed by professional support from the comfort of your home.
             </p>
 
             <div className="space-y-8 text-base md:text-lg">
               <div>
-                <h4 className="font-bold text-lg flex items-center gap-2">👨‍🍳 Name</h4>
-                <p className="text-gray-800 mt-1">Parkash Chand</p>
+                <h4 className="font-bold text-lg flex items-center gap-2">📜Company Name</h4>
+                <p className="text-gray-800 mt-1">Trust Bridge Overseas</p>
               </div>
               <div>
                 <h4 className="font-bold text-lg flex items-center gap-2">📍 Address</h4>
                 <p className="text-gray-800 mt-1">
-                  V.P.O Nangal Kalan, Tehsil Haroli, District Una
+                  SCF 64 ,Sector 65 Phase 11 Mohali (Punjab) 160062
                 </p>
               </div>
               <div>
                 <h4 className="font-bold text-lg flex items-center gap-2">📧 Email</h4>
                 <p className="text-gray-800 mt-1">
-                  dineshchoudhary9815947385@gmail.com
+                  trustbridgeoverseas@gmail.com
                 </p>
               </div>
             </div>
@@ -126,14 +125,14 @@ const Contact = () => {
           </div>
 
           {/* MAP */}
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <iframe
               title="location"
               src="https://www.google.com/maps?q=31.3545,76.2766&z=14&output=embed"
               className="w-full h-64 md:h-72 rounded-md border-none"
               loading="lazy"
             ></iframe>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import videoSrc from "../../public/2213-156227801_medium.mp4";
+import videoSrc from "../../public/stayAbroadvideo.mp4";
 
 const CommitmentSection = () => {
   return (
@@ -8,7 +8,7 @@ const CommitmentSection = () => {
         {/* Video Section */}
         <div className="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-lg">
           <video
-            controls
+            // controls
             autoPlay
             muted
             loop

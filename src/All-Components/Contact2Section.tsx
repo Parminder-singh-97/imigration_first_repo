@@ -45,9 +45,9 @@ const ContactSection = () => {
           <div className="bg-sky-400 text-white rounded-2xl p-6 text-center">
             <h3 className="font-semibold text-lg mb-2">Who we are</h3>
             <p className="text-sm md:text-base">
-              Stark Overseas is your trusted partner for all immigration needs.
-              Our expert team helps you navigate the complex process of moving
-              abroad.
+              Trust Bridge Overseas is your trusted partner for all immigration
+              needs. Our expert team helps you navigate the complex process of
+              moving abroad.
             </p>
           </div>
           <div className="bg-blue-900 text-white rounded-2xl p-6 text-center">
@@ -87,17 +87,15 @@ const ContactSection = () => {
             <ul className="space-y-4 text-gray-700 text-base md:text-lg">
               <li className="flex items-center gap-3">
                 <Phone className="text-blue-600" />
-                <span>+91 97798 45777</span>
+                <span>+91 7717354081</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-blue-600" />
-                <span>overseasstark@gmail.com</span>
+                <span>trustbridgeoverseas@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="text-blue-600 mt-1" />
-                <span>
-                  SCO 369 & 370, 35B, Sector 35, 2nd Floor, Chandigarh, 160022
-                </span>
+                <span>SCF 64 ,Sector 65 Phase 11 Mohali (Punjab) 160062</span>
               </li>
             </ul>
           </div>

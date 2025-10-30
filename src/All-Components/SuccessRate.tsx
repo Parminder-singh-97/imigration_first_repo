@@ -9,8 +9,8 @@ interface StatItem {
 
 const stats: StatItem[] = [
   { label: "Success Visa", value: 254, bgColor: "bg-[#1E3A8A]" }, // dark blue
-  { label: "Study Visa", value: 96, suffix: "%", bgColor: "bg-[#38BDF8]" }, // sky blue
-  { label: "Family / Spouse Visa", value: 98, suffix: "%", bgColor: "bg-[#1E3A8A]" }, // dark blue
+  { label: "Study Visa", value: 76, suffix: "%", bgColor: "bg-[#38BDF8]" }, // sky blue
+  { label: "Family / Spouse Visa", value: 84, suffix: "%", bgColor: "bg-[#1E3A8A]" }, // dark blue
 ];
 
 const VisaStats: React.FC = () => {

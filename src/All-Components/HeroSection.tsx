@@ -389,6 +389,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { X, Menu } from "lucide-react";
 import { motion } from "framer-motion";
+import Logo from "../../public/Logo.png"
+import { useLocation } from "react-router-dom";
 import "./HeroSection.css"; // 👈 we’ll add a tiny CSS snippet for infinite scroll
 
 const countries = [
@@ -410,6 +412,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const menuRef = useRef<HTMLDivElement | null>(null);
+
+  const {pathname} = useLocation()
 
   // Handle outside click for menu close
   useEffect(() => {
@@ -466,7 +470,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
 
       {/* ===== Navbar ===== */}
       <nav className="relative z-10 flex justify-between items-center px-6 md:px-16 py-4 text-white">
-        <div className="text-2xl font-bold">My LOGO</div>
+        <div className="text-2xl font-bold w-[100px]">
+          <img src={Logo} alt="Trust Bridge Logo" className="w-32 h-auto rounded-md"/>
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-lg">
@@ -505,7 +511,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
       {/* ===== Hero Content ===== */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center text-white px-1 py-[60px]">
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Stay Abroad</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">{pathname == "/" && "Stay Abroad" }{pathname == "/about-us" && "About Us"}{pathname == "/services" && "Services"} {pathname == "/contact" && "Contact us"}</h1>
           <p className="text-lg md:text-2xl max-w-2xl mx-auto">
             We are your path finder at each step of Abroad Education Process
           </p>
