@@ -394,8 +394,8 @@ import { useLocation } from "react-router-dom";
 import "./HeroSection.css"; // 👈 we’ll add a tiny CSS snippet for infinite scroll
 
 const countries = [
-  "/public/denmark.jpg",
-  "/public/germany.jpg",
+  "../../public/denmark.jpg",
+  "../../public/germany.jpg",
   "/public/turkey.jpg",
   "/public/greece.jpg",
   "/public/italy.jpg",
