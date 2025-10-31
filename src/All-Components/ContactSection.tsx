@@ -11,13 +11,17 @@ const Contact = () => {
 
     const formData = new FormData(e.currentTarget);
 
-    const response = await fetch("https://formsubmit.co/ajax/trustbridgeoverseas@gmail.com", {
-      method: "POST",
-      body: formData,
-      headers: { Accept: "application/json" },
-    });
+    const response = await fetch(
+      "https://formsubmit.co/ajax/trustbridgeoverseas@gmail.com",
+      {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      }
+    );
 
     if (response.ok) {
+      setLoading(false);
       setStatus("✅ Message sent successfully!");
       e.currentTarget.reset();
     } else {
@@ -27,36 +31,49 @@ const Contact = () => {
   };
 
   return (
-    <section id={"contact"} className="w-full min-h-screen px-4 md:px-12 py-10 bg-white">
-
+    <section
+      id={"contact"}
+      className="w-full min-h-screen px-4 md:px-12 py-10 bg-white"
+    >
       <div className="grid md:grid-cols-2 gap-10 items-stretch">
         {/* LEFT INFO */}
         <div className="flex flex-col justify-between bg-white rounded-lg">
           <div>
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 border-b-2 border-gray-300 inline-block">
-        Contact Us
-      </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 border-b-2 border-gray-300 inline-block">
+              Contact Us
+            </h2>
             <h3 className="text-2xl md:text-3xl font-bold mb-6 leading-snug text-gray-900">
-            Get Free & Quality Online Consultation <br /> Your Experience Starts Here!
+              Get Free & Quality Online Consultation <br /> Your Experience
+              Starts Here!
             </h3>
 
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8">
-             Our expert advisors offer comprehensive guidance tailored to your unique immigration needs, ensuring you receive valuable insights and practical solutions without any cost. Take advantage of this opportunity to start your journey with confidence, backed by professional support from the comfort of your home.
+              Our expert advisors offer comprehensive guidance tailored to your
+              unique immigration needs, ensuring you receive valuable insights
+              and practical solutions without any cost. Take advantage of this
+              opportunity to start your journey with confidence, backed by
+              professional support from the comfort of your home.
             </p>
 
             <div className="space-y-8 text-base md:text-lg">
               <div>
-                <h4 className="font-bold text-lg flex items-center gap-2">📜Company Name</h4>
+                <h4 className="font-bold text-lg flex items-center gap-2">
+                  📜Company Name
+                </h4>
                 <p className="text-gray-800 mt-1">Trust Bridge Overseas</p>
               </div>
               <div>
-                <h4 className="font-bold text-lg flex items-center gap-2">📍 Address</h4>
+                <h4 className="font-bold text-lg flex items-center gap-2">
+                  📍 Address
+                </h4>
                 <p className="text-gray-800 mt-1">
                   SCF 64 ,Sector 65 Phase 11 Mohali (Punjab) 160062
                 </p>
               </div>
               <div>
-                <h4 className="font-bold text-lg flex items-center gap-2">📧 Email</h4>
+                <h4 className="font-bold text-lg flex items-center gap-2">
+                  📧 Email
+                </h4>
                 <p className="text-gray-800 mt-1">
                   trustbridgeoverseas@gmail.com
                 </p>
