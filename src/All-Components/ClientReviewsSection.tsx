@@ -104,13 +104,13 @@ const reviews = [
     name: "Vanshika Garg",
     visa: "UK Tourist Visa",
     text: "Trust Bridge Overseas Mohali di team bahut changi hai. Staff sab polite te professional ne. Bahut vadhiya experience si mera, sach much helpful log ne.",
-    image: "/public/girlClient1.jpeg", // Indian-looking female
+    image: "/girlClient1.jpeg", // Indian-looking female
   },
   {
     name: "Dharminder Singh",
     visa: "Singapore Visitor Visa",
     text: "Mujhe Trust Bridge Overseas ke staff ka behavior bahut pasand aaya. Sab ne bahut pyaar se guide kiya, process smooth tha. Highly recommend karunga!",
-    image: "/public/boyClient2.jpeg", // Indian-looking male
+    image: "/boyClient2.jpeg", // Indian-looking male
   },
   {
     name: "Priya Sharma",
@@ -128,7 +128,7 @@ const reviews = [
     name: "Simran Kaur",
     visa: "New Zealand Study Visa",
     text: "Mainu lagda Mohali ch Trust Bridge Overseas best consultancy hai. Staff dil se help karda, service transparent te fast aa. Bohat changa experience si!",
-    image: "/public/girlClient3.jpeg", // Indian-looking female
+    image: "/girlClient3.jpeg", // Indian-looking female
   },
 ];
 

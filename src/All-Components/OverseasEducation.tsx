@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import studentsimg from "../../public/boyandGIrlimg.png";
 
 const images = [
-  "/public/denmark.jpg",
-  "/public/germany.jpg",
-  "/public/turkey.jpg",
-  "/public/greece.jpg",
-  "/public/italy.jpg",
-  "/public/luxembourg.jpg",
+  "/denmark.jpg",
+  "/germany.jpg",
+  "/turkey.jpg",
+  "/greece.jpg",
+  "/italy.jpg",
+  "/luxembourg.jpg",
 ];
 
 const OverseasEducation = () => {

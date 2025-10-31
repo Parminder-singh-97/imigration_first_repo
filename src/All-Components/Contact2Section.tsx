@@ -3,12 +3,12 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 // Example images — replace with your own URLs or imports
 const images = [
-  "/public/denmark.jpg",
-  "/public/germany.jpg",
-  "/public/turkey.jpg",
-  "/public/greece.jpg",
-  "/public/italy.jpg",
-  "/public/luxembourg.jpg",
+  "/denmark.jpg",
+  "/germany.jpg",
+  "/turkey.jpg",
+  "/greece.jpg",
+  "/italy.jpg",
+  "/luxembourg.jpg",
 ];
 
 const ContactSection = () => {
