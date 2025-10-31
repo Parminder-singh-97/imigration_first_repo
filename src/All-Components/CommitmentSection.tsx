@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import videoSrc from "../../public/stayAbroadvideo.mp4";
 
 const CommitmentSection = () => {

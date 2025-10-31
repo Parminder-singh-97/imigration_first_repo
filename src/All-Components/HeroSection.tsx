@@ -388,7 +388,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { X, Menu } from "lucide-react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Logo from "../../public/Logo.png"
 import { useLocation } from "react-router-dom";
 import "./HeroSection.css"; // 👈 we’ll add a tiny CSS snippet for infinite scroll

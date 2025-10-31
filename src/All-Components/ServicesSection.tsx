@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Briefcase, Book, Plane, Users, GraduationCap, BadgeCheck } from "lucide-react";
 
 const services = [
