@@ -2,7 +2,7 @@
 import "./App.css";
 import HeroSection from "./All-Components/HeroSection";
 
-import Bgimg from "../public/backGroundImg2.jpg";
+import Bgimg from "../public/indianPassport2.webp";
 
 import Footer from "./componets-reusable/Footer";
 import { Outlet } from "react-router-dom";

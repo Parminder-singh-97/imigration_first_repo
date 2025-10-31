@@ -149,8 +149,6 @@
 
 // export default HeroSection;
 
-
-
 // import React, { useState, useEffect, useRef } from "react";
 // import { NavLink } from "react-router-dom";
 // import { X, Menu } from "lucide-react";
@@ -384,12 +382,11 @@
 
 // export default HeroSection;
 
-
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { X, Menu } from "lucide-react";
 // import { motion } from "framer-motion";
-import Logo from "../../public/Logo.png"
+import Logo from "../../public/Logo.png";
 import { useLocation } from "react-router-dom";
 import "./HeroSection.css"; // 👈 we’ll add a tiny CSS snippet for infinite scroll
 
@@ -407,13 +404,16 @@ interface HeroSectionProps {
   mediaSrc: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({
+  variant = "video",
+  mediaSrc,
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
-  const {pathname} = useLocation()
+  const { pathname } = useLocation();
 
   // Handle outside click for menu close
   useEffect(() => {
@@ -463,15 +463,27 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
             playsInline
           />
         ) : (
-          <img src={mediaSrc} alt="Background" className="w-full h-[80vh] object-cover" />
+          <img
+            src={mediaSrc}
+            alt="Background"
+            className="w-full h-[80vh] object-cover object-right"
+          />
         )}
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* ===== Navbar ===== */}
       <nav className="relative z-10 flex justify-between items-center px-6 md:px-16 py-4 text-white">
-        <div className="text-2xl font-bold w-[100px]">
-          <img src={Logo} alt="Trust Bridge Logo" className="w-32 h-auto rounded-md"/>
+        <div className="text-2xl font-bold w-[100px] relative">
+          <img
+            src={Logo}
+            alt="Trust Bridge Logo"
+            className="w-32 h-auto rounded-md"
+          />
+          {/* <div className="text-sm absolute font-normal text-white text-[18px] left-[21px] top-[84px]">
+          {/* <p>Overseas</p> */}
+          {/* <p>Your Success is Our Achievement</p>
+          </div>  */}
         </div>
 
         {/* Desktop Menu */}
@@ -479,7 +491,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
           {["Home", "About Us", "Services", "Contact"].map((name) => (
             <li key={name}>
               <NavLink
-                to={name === "Home" ? "/" : `/${name.toLowerCase().replace(" ", "-")}`}
+                to={
+                  name === "Home"
+                    ? "/"
+                    : `/${name.toLowerCase().replace(" ", "-")}`
+                }
                 className={({ isActive }) =>
                   `hover:text-blue-400 ${
                     isActive ? "text-blue-400 font-semibold" : ""
@@ -510,13 +526,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
 
       {/* ===== Hero Content ===== */}
       <div className="relative z-10 flex flex-col justify-center items-center text-center text-white px-1 py-[60px]">
-        <div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">{pathname == "/" && "Stay Abroad" }{pathname == "/about-us" && "About Us"}{pathname == "/services" && "Services"} {pathname == "/contact" && "Contact us"}</h1>
-          <p className="text-lg md:text-2xl max-w-2xl mx-auto">
+        <div className="relative">
+          <p className="text-lg md:text-2xl max-w-2xl mx-auto font-medium text-[#ffffff] absolute top-[-88px] left-1/2 -translate-x-1/2">
+            Your Success is Our Achievement
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-[#ffffff]">
+            {pathname == "/" && "Stay Abroad"}
+            {pathname == "/about-us" && "About Us"}
+            {pathname == "/services" && "Services"}{" "}
+            {pathname == "/contact" && "Contact us"}
+          </h1>
+          <p className="text-lg md:text-2xl max-w-2xl mx-auto text-[#ffffff]">
             We are your path finder at each step of Abroad Education Process
           </p>
         </div>
-
+ 
         {/* ===== Smooth Infinite Scrolling Flags ===== */}
         <div className="mt-10 w-full overflow-hidden">
           <div className="flex gap-4 min-w-max animate-smooth-scroll">
@@ -541,7 +565,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
       <div
         ref={menuRef}
         className={`fixed top-0 right-0 h-full bg-white text-black z-50 transform transition-transform duration-500 ease-in-out
-        ${menuOpen ? "translate-x-0" : "translate-x-full"} w-[65vw] sm:w-[60vw]`}
+        ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        } w-[65vw] sm:w-[60vw]`}
       >
         <div className="flex justify-between items-center p-4 border-b border-gray-200">
           <h2 className="text-xl font-semibold text-gray-800">Menu</h2>
@@ -557,7 +583,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ variant = "video", mediaSrc }
           {["Home", "About Us", "Services", "Contact"].map((name) => (
             <li key={name}>
               <NavLink
-                to={name === "Home" ? "/" : `/${name.toLowerCase().replace(" ", "-")}`}
+                to={
+                  name === "Home"
+                    ? "/"
+                    : `/${name.toLowerCase().replace(" ", "-")}`
+                }
                 className={({ isActive }) =>
                   `block py-2 hover:text-blue-500 ${
                     isActive ? "text-blue-600 font-semibold" : ""

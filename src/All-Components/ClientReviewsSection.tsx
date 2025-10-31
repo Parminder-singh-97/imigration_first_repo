@@ -116,13 +116,13 @@ const reviews = [
     name: "Priya Sharma",
     visa: "Canada Study Visa",
     text: "Mainu Canada study visa mil gaya Trust Bridge Overseas de through. Process clear te fast si. Bahut honest consultancy aa, thanks team!",
-    image: "https://i.pravatar.cc/300?img=49", // Indian-looking female
+    image: "/girlClientphoto2.webp", // Indian-looking female
   },
   {
     name: "Aman Verma",
     visa: "Australia PR Visa",
     text: "Trust Bridge Overseas Mohali wale bahut professional ne. Har step detail ch samjha ke help kiti. PR process tension-free ho gaya, shukriya ji!",
-    image: "https://i.pravatar.cc/300?img=8", // Indian-looking male
+    image: "/clientimg2.jpg", // Indian-looking male
   },
   {
     name: "Simran Kaur",
